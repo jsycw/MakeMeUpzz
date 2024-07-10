@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Header.master.cs" Inherits="MakeMeUpzz.Layout.Header" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div>
+     <asp:Label ID="Title" runat="server" Text="MakeMeUpzz" ></asp:Label>
+     <asp:Button ID="LoginBtn" runat="server" Text="Login" OnClick="LoginBtn_Click" />
+     <asp:Button ID="RegisterBtn" runat="server" Text="Register" OnClick="RegisterBtn_Click" />
+     <asp:Button ID="HomeBtn" runat="server" Text="Home" OnClick="HomeBtn_Click" />
+     <asp:Button ID="OrderMakeupBtn" runat="server" Text="Order Makeup" OnClick="OrderMakeupBtn_Click" />
+     <asp:Button ID="ProfileBtn" runat="server" Text="Profile" OnClick="ProfileBtn_Click" />
+     <asp:Button ID="TransactionHistoryBtn" runat="server" Text="Transaction History" OnClick="TransactionHistoryBtn_Click"/>
+     <asp:Button ID="ManageMakeupBtn" runat="server" Text="Manage Makeup" OnClick="ManageMakeupBtn_Click"/>
+     <asp:Button ID="HandleTransactionBtn" runat="server" Text="Handle Transaction" OnClick="HandleTransactionBtn_Click"/>
+     <asp:Button ID="ViewReportBtn" runat="server" Text="View Transactions Report" OnClick="ViewReportBtn_Click"/>
+     <asp:Button ID="LogoutBtn" runat="server" Text="Logout" OnClick="LogoutBtn_Click" />
+ </div>
+
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
